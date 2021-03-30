@@ -61,7 +61,6 @@ header {
     position: sticky;
     top: 3em;
     flex-basis: 100%;
-    width:100%;
     border-radius: 5px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); 
     background: var(--color1);
@@ -70,11 +69,11 @@ header {
 
 .areatitle {
     flex-basis: 100%;
-    width: 100%;
 }
 
 .subareas {
     display: flex;
+    width:99%;
     padding: 5px;
     margin: 0px;
     align-items: stretch;
@@ -92,9 +91,14 @@ header {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); 
 }
 
+@media (min-width:600px) {
+    .areabits{width:250px;}
+}
+
 
 .areabits:hover {
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    transform: scale(1.01);
 }
 
 .areabitlinks {
