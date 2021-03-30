@@ -92,7 +92,14 @@ a {text-decoration: none;color:var(--textColor);}
     }
 }
 
-#exercise {background: var(--color1);}
+#exercise {
+    background-image: url("../Images/exercise1.jpg");
+    background-color: var(--color1);
+    background-position: center;
+    background-repeat: none;
+    background-size:cover;
+    height:auto;
+}
 #nutrition {background: var(--color6);color:var(--color2);}
 #sleepHygiene {background: var(--color3);}
 #yoga {background: var(--color4);}

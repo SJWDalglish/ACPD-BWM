@@ -8,25 +8,31 @@
 
     <link rel="stylesheet" href="Styles/reset.css">
     <link rel="stylesheet" href="Styles/colorscheme1.css">
-    <link rel="stylesheet" href="Styles/main.css">
+    <link id="pagestyle" rel="stylesheet" href="Styles/main.css">
     <!--link rel="stylesheet" href="Styles/flat.css"-->
+
+    <script type="text/javascript" src="Scripts/helloDave.js"></script>
+    <script type="application/javascript" src="Scripts/stylesheetSelector.js"></script>
 </head>
 
 
 <body>
-    <script>
-        alert("Hi Dave!");
-        confirm("Do you want to see the website?");
-    </script>
+    
 
     <!-- HEADER -->
     <header>
+        <div id="stylesheetButtons">
+            <button id="stylesheet1" > Default Style Sheet </button>
+            <button id="stylesheet2" > Flat Style Sheet </button>
+            <button id="stylesheet3" > Flat Photo Style Sheet </button>
+        </div>        
+    
         <div id="headerbar">
             <img src="Images/ACPD_Patch-dark-Copy-275x300.png" alt="" height="50em">
             <h1 id="pageTitle">ACPD Behavioral Wellness Model</h1>
         </div>
-        <div id="pageOverview">
-            The ACPD believes that the physical and mental health of its officers are essential components of a healthy police department and a safe community. The program we are presenting offers multiple pathways for every officer to identify and utilize services and participate in activities that will promote and maintain positive physical and mental health.
+        <div id="pageOverviewBox">
+            <p id="pageOverview">The ACPD believes that the physical and mental health of its officers are essential components of a healthy police department and a safe community. The program we are presenting offers multiple pathways for every officer to identify and utilize services and participate in activities that will promote and maintain positive physical and mental health.</p>
         </div>
     </header>
 

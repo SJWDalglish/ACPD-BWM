@@ -46,6 +46,7 @@ header {
 
 
 .areaheader {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     flex-basis: 100%;
@@ -58,6 +59,7 @@ header {
 
 
 .subareaheader {
+    position: -webkit-sticky;
     position: sticky;
     top: 3em;
     flex-basis: 100%;
