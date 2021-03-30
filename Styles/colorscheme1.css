@@ -1,0 +1,21 @@
+/* Color scheme */
+:root {
+    --color1: #EEE;
+    --color1shade: #DDD;
+    --color1tint: #FFF;
+    --color2: #115;
+    --color2shade: #004;
+    --color2tint: #226;
+    --color3: #BEE;
+    --color3shade: #ADD;
+    --color3tint: #CFF;
+    --color4: #511;
+    --color4shade: #400;
+    --color4tint: #622;
+    --color5: #151;
+    --color5shade: #040;
+    --color5tint: #262;
+    --textColor: #111 ;
+    --textcolorshade: #000;
+    --textcolortint: #222;
+}

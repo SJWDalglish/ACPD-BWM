@@ -1,0 +1,99 @@
+:root {
+    --color1: #e72;
+    --color2: #089;
+    --color3: #6bb;
+    --color4: #ea7;
+    --color5: #b66;
+    --color6: #ddd;
+    --textColor: #111;
+    --textNeg: #eee;
+}
+
+/* General styles */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--textColor);
+}
+
+h1,h2,h3,h4,h5,p {padding:5px; margin:5px;}
+h1 {font-size: 48px;}
+h2 {font-size: 32px;}
+h3 {font-size: 24px;}
+h4 {font-size: 20px;}
+h5 {font-size: 18px;}
+p {font-size: 16px;}
+a {text-decoration: none;color:var(--textColor);}
+
+#headerbar {
+    display:flex;
+    justify-content: center;
+}
+
+.areas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.subareas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+
+}
+
+.areabits {
+    flex:1 1 25%;
+    min-width:250px;
+    color: var(--textNeg);
+    padding: 20px;
+}
+
+.areabits:hover {
+    transform: scale(.9);
+}
+
+.areaheader {
+    position: sticky;
+    top: 0;
+    width: 100%; 
+    flex-basis: 100%;
+    background:var(--color2);
+    color:var(--color6);
+    padding: 30px;
+    z-index: 2;
+}
+.subareaheader {
+
+    position: sticky;
+    top: 5em;
+    width: 100%; 
+    flex-basis: 100%;
+    background:var(--color2);
+    color:var(--color6);
+    padding: 30px;
+}
+
+@media screen and (max-width: 600px;) {
+    .areabits {
+        flex: 0 0 100%;
+    }
+}
+
+#exercise {background: var(--color1);}
+#nutrition {background: var(--color6);color:var(--color2);}
+#sleepHygiene {background: var(--color3);}
+#yoga {background: var(--color4);}
+#bodyMarkers {background: var(--color5);}
+
+
+#understandingChallenges {background: var(--color1);}
+#compassionFatigueTraining {background: var(--color6);color:var(--color2);}
+#resilienceTraining {background: var(--color3);}
+#yoga {background: var(--color4);}
+#bodyMarkers {background: var(--color5);}

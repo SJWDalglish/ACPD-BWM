@@ -3,30 +3,35 @@
 
 
 <head>
-    <link rel="icon" src="Images/" />
+    <link rel="icon" href="Images/ACPD_Patch-dark-Copy-275x300.png" />
     <title>ACPD Behavioral Wellness Model</title>
+
+    <link rel="stylesheet" href="Styles/reset.css">
+    <link rel="stylesheet" href="Styles/colorscheme1.css">
     <link rel="stylesheet" href="Styles/main.css">
+    <!--link rel="stylesheet" href="Styles/flat.css"-->
 </head>
 
 
 <body>
     <!-- HEADER -->
     <header>
-        <img />
-        <h1 id="pageTitle"> ACPD Behavioral Wellness Model</h1>
+        <div id="headerbar">
+            <img src="Images/ACPD_Patch-dark-Copy-275x300.png" alt="" height="50em">
+            <h1 id="pageTitle">ACPD Behavioral Wellness Model</h1>
+        </div>
+        <div id="pageOverview">
+            The ACPD believes that the physical and mental health of its officers are essential components of a healthy police department and a safe community. The program we are presenting offers multiple pathways for every officer to identify and utilize services and participate in activities that will promote and maintain positive physical and mental health.
+        </div>
     </header>
 
 
     <!-- MAIN -->
     <main>
-        <div id="pageOverview">The ACPD believes that the physical and mental health of its officers are essential components of a healthy police department and a safe community. The program we are presenting offers multiple pathways for every officer to identify and utilize services and participate in activities that will promote and maintain positive physical and mental health.</div>
-
-        <h2 id="components">Components</h2>
-
 
         <!-- AREA 1 BLOCK -->
-        <h3 id="area1title" class="areaheaders">Area 1: Fitness/Nutrition/Medical Wellness</h3>
         <div id="area1" class="areas">
+            <div id="area1header" class="areaheader"><h3 id="area1title" class="areaheaders">Area 1: Fitness/Nutrition/Medical Wellness</h3></div>
             <div id="exercise" class="areabits">
                 <a class="areabitlinks" href=""><h5>Exercise</h5></a> 
                 <p>Regular physical activity is known as a preventative measure for physical and behavioral illness.  It increases longevity and helps to maintain independence and health post-retirement.  Physical fitness is a major component of officer safety and performance.</p>
@@ -51,13 +56,13 @@
 
 
         <!-- AREA 2 BLOCK -->
-        <h3 id="area2title" class="areaheaders">Area 2: Mental Health and Wellness</h3>
         <div id="area2" class="areas">
+            <div id="area2header" class="areaheader"><h3 id="area2title" class="areaheaders">Area 2: Mental Health and Wellness</h3></div>
             <!-- EDUCATION AND TRAINING -->
             <div id="educationAndTraining" class="subareas">
-                <h4>
+                <div id="subarea1header" class="subareaheader"><h4 class="subareaheaders">
                     Education and Training
-                </h4>
+                </h4></div>
                 <div id="understandingChallenges" class="areabits">
                     <a class="areabitlinks" href=""><h5>Understanding and identifying mental health challenges</h5></a>
                     <p>Part of resolving any problem and living a healthy life is awareness of obstacles that may occasionally confront us.  We have a variety of resources available for education on behavioral health issues.</p>
@@ -74,9 +79,9 @@
 
             <!-- SUPPORTIVE SERVICES -->
             <div id="supportiveServices" class="subareas">
-                <h4>
+                <div id="subarea2header" class="subareaheader"><h4 class="subareaheaders">
                     Supportive Services
-                </h4>
+                </h4></div>
                 <div id="peerSupport" class="areabits">
                     <a class="areabitlinks" href=""><h5>Peer Support</h5></a>
                     <p>Peer Support is available 24 / 7 / 365, for you, your family and your fellow first responders throughout the region.  All Peer Support officers are trained in Group and Individual Crisis Debriefing and Suicide Prevention.  All Peer Support officers are covered by the Virginia State Code as members of an accredited team.  This provides confidentiality to conversations with Peer Support officers with a few exceptions.</p>
@@ -105,9 +110,9 @@
 
             <!-- PROFESSIONAL SERVICES -->
             <div id="professionalServices" class="subareas">
-                <h4>
+                <div id="subarea3header" class="subareaheader"><h4 class="subareaheaders">
                     Professional Services
-                </h4>
+                </h4></div>
                 <div id="onsiteClinician" class="areabits">
                     <a class="areabitlinks" href=""><h5>On-site clinician</h5></a>
                     <p>Dr. Lisa Cooper-Lucas supports EAP by serving as an additional provider for behavioral health services and consultation.  She has experience working with first responders and veterans.</p>
@@ -129,8 +134,8 @@
 
 
         <!-- AREA 3 BLOCK -->
-        <h3 id="area1title" class="areaheaders">Area 3: Behavioral Health Referral Services</h3>
         <div id="area3" class="areas">
+            <div id="area3header" class="areaheader"><h3 id="area1title" class="areaheaders">Area 3: Behavioral Health Referral Services</h3></div>
             <div id="eap" class="areabits">
                 <a class="areabitlinks" href=""><h5>EAP</h5></a>
                 <p>Employee Assistance Program.  Confidential counseling and referral services available to Arlington County employees and their family members.</p>

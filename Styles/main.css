@@ -1,32 +1,71 @@
 /* General styles */
 
-html, body {
-    font-family: arial, sans;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--textColor);
+    background: linear-gradient(45deg, var(--color2),var(--color3));
 }
 
+h1,h2,h3,h4,h5,p {padding:5px; margin:5px;}
+h1 {font-size: 48px;}
+h2 {font-size: 32px;}
+h3 {font-size: 24px;}
+h4 {font-size: 20px;}
+h5 {font-size: 18px;}
+p {font-size: 16px;}
+a {text-decoration: none;}
+
+/* Header styles */
 header {
-    position: sticky;
+    background: var(--color1);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); 
+
 }
 
-a {
-    text-decoration: none;
+#headerbar {
+    display:flex;
+    align-items: center;    
+    justify-content: center;
+    padding: 20px;
 }
 
-h4 {
-    align-self: center;
+#pageOverview {
+    padding: 20px;
 }
 
-
-
-/* class styles */
+/* Main styles */
 
 .areas {
     display: flex;
     align-items: stretch;
     justify-content: flex-start;
-    padding: 5px;
-    margin: 5px 5px 40px 5px;
+    padding: 10px;
+    margin: 10px;
     flex-wrap: wrap;
+}
+
+
+.areaheader {
+    position: sticky;
+    top: 0;
+    flex-basis: 100%;
+    width:100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); 
+    background: var(--color1);
+    z-index: 2;
+}
+
+
+.subareaheader {
+    position: sticky;
+    top: 3em;
+    flex-basis: 100%;
+    width:100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); 
+    background: var(--color1);
+    z-index: 1;
 }
 
 .areatitle {
@@ -37,38 +76,40 @@ h4 {
 .subareas {
     display: flex;
     padding: 5px;
-    margin: 5px;
-    flex-direction: column;
-    align-items: center;
+    margin: 0px;
+    align-items: stretch;
+    flex-wrap:wrap;
 }
 
 .areabits {
+    background: var(--color1);
     font-size: 14px;
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
-    width: 250px;
+    width: 100%;
     height: auto;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); 
 }
+
 
 .areabits:hover {
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
 
 .areabitlinks {
-    font-size: 16px;
-    color: #111;
+    color: var(--textColor);
 }
 
 .areabitlinks:hover {
-    text-decoration: underline;
+    text-decoration: underline;    
 }
 
-/* ID styles */
 
 #area2 {
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items:flex-start;
 }
 
 #educationAndTraining {
@@ -81,4 +122,13 @@ h4 {
 
 #professionalServices {
     flex: 1;
+}
+
+/* Footer styles */
+
+footer {
+    background: var(--color1);
+    box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.2), 0 -3px 10px 0 rgba(0, 0, 0, 0.19); 
+    margin: 0;
+    padding: 10px;
 }
