@@ -1,13 +1,14 @@
 /* General styles */
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--textColor);
-    background: linear-gradient(45deg, var(--color2),var(--color3));
+    font-family: Verdana, sans-serif;
+    color: var(--darkText);
+    background: var(--color1);
 }
 
-h1,h2,h3,h4,h5,p {padding:5px; margin:5px;}
-h1 {font-size: 48px;}
+h1,h2,h3,h4,h5,p {padding:10px; margin:10px; line-height: 1.2;}
+h1,h2,h3,h4,h5 {font-weight: bold;}
+h1 {font-size: 40px;}
 h2 {font-size: 32px;}
 h3 {font-size: 24px;}
 h4 {font-size: 20px;}
@@ -17,20 +18,30 @@ a {text-decoration: none;}
 
 /* Header styles */
 header {
-    background: var(--color1);
+    background: var(--color2);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); 
-
+    padding: 100px;
 }
 
 #headerbar {
     display:flex;
+    flex-direction: column;
     align-items: center;    
     justify-content: center;
     padding: 20px;
+    text-align: center;
+}
+
+#acpdLogo {
+    width: auto;
+    height: 100%;
+    max-height: 150px;
+    padding: 10px; 
 }
 
 #pageOverview {
-    padding: 20px;
+    padding: 20px 40px 20px 40px;
+    font-size: 20px;
 }
 
 /* Main styles */
@@ -38,10 +49,13 @@ header {
 .areas {
     display: flex;
     align-items: stretch;
-    justify-content: flex-start;
-    padding: 10px;
-    margin: 10px;
+    justify-content: stretch;
+    padding: 20px;
+    margin: 40px;
     flex-wrap: wrap;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); 
+    background: var(--color2);
 }
 
 
@@ -52,8 +66,8 @@ header {
     flex-basis: 100%;
     width:100%;
     border-radius: 5px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); 
-    background: var(--color1);
+    box-shadow: 0px 3px 4px -6px rgba(0, 0, 0, 0.2), 0px 4px 6px -5px rgba(0, 0, 0, 0.19); 
+    background: var(--color2);
     z-index: 2;
 }
 
@@ -61,11 +75,12 @@ header {
 .subareaheader {
     position: -webkit-sticky;
     position: sticky;
-    top: 3em;
+    top: 3.5em;
     flex-basis: 100%;
     border-radius: 5px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); 
-    background: var(--color1);
+    margin-top: 0px;
+    box-shadow: 0px 3px 4px -6px rgba(0, 0, 0, 0.2), 0px 4px 6px -5px rgba(0, 0, 0, 0.19); 
+    background: var(--color3);
     z-index: 1;
 }
 
@@ -76,25 +91,38 @@ header {
 .subareas {
     display: flex;
     width:99%;
-    padding: 5px;
-    margin: 0px;
+    padding: 0px;
+    margin: 10px 0 10px 0;
     align-items: stretch;
     flex-wrap:wrap;
+    background: var(--color3);
+    border-radius: 5px;
+    
 }
 
 .areabits {
-    background: var(--color1);
+    background: var(--color4);
     font-size: 14px;
-    padding: 10px;
+    padding: 20px;
     margin: 10px;
     border-radius: 5px;
-    width: 100%;
+    width:auto;
     height: auto;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); 
+    flex: 1 1 25%;
 }
 
-@media (min-width:600px) {
-    .areabits{width:250px;}
+@media (max-width: 650px) {
+    .areas {
+        justify-content: stretch;
+    }
+    .areabits {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+    
+    .subareaheader {
+        top: 5em;
+    }
 }
 
 
@@ -104,7 +132,7 @@ header {
 }
 
 .areabitlinks {
-    color: var(--textColor);
+    color: var(--darkText);
 }
 
 .areabitlinks:hover {
@@ -118,23 +146,16 @@ header {
     align-items:flex-start;
 }
 
-#educationAndTraining {
-    flex: 1;
-}
-
-#supportiveServices {
-    flex: 2;
-}
-
-#professionalServices {
-    flex: 1;
-}
-
 /* Footer styles */
 
 footer {
-    background: var(--color1);
+    background: var(--color2);
     box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.2), 0 -3px 10px 0 rgba(0, 0, 0, 0.19); 
     margin: 0;
     padding: 10px;
+}
+
+#cummingsLogo {
+    max-width: 300px;
+    height: auto;
 }
