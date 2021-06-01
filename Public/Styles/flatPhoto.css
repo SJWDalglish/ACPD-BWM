@@ -61,7 +61,7 @@ a {text-decoration: none;color:var(--textColor);}
 }
 
 .areabits:hover {
-    transform: scale(.9);
+    transform: scale(.95);
 }
 
 .areaheader {

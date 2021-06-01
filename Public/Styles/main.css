@@ -1,7 +1,7 @@
 /* General styles */
 
 body {
-    font-family: Verdana, sans-serif;
+    font-family: 'Roboto Condensed',Verdana, sans-serif;
     color: var(--darkText);
     background: var(--color1);
 }
@@ -91,7 +91,7 @@ header {
 .subareas {
     display: flex;
     width:99%;
-    padding: 0px;
+    padding: 10px;
     margin: 10px 0 10px 0;
     align-items: stretch;
     flex-wrap:wrap;
@@ -103,13 +103,73 @@ header {
 .areabits {
     background: var(--color4);
     font-size: 14px;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
+    padding: 0px;
+    margin: 5px;
+    border-radius: 0px;
     width:auto;
-    height: auto;
+    height: 300px;
     flex: 1 1 25%;
+    display:flex;
+    background-color: var(--color2);
+    background-size:cover;
+    background-position: center;
 }
+
+.layer {
+    background-color: rgba(255,255,2555,0);
+    padding: 20px;
+    width: 100%;
+    transition: .3s ease-in-out;
+    background: radial-gradient(rgba(255,255,255,.9) 0%,rgba(255,255,255,0) 100%);
+}
+
+.layer:hover {
+    background: rgba(255,255,2555,0.8);
+}
+
+.areabits h5 {
+    text-align: center;
+    position:relative;
+    top:40%;
+    font-size: 30px;
+    transition: .3s ease-in-out;
+}
+
+.areabits:hover h5 {
+    font-size:18px;
+    top: 0px;
+}
+
+.areabits p {
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+
+.areabits:hover p {
+    opacity: 1;
+}
+
+#exercise {background-image: url("../Images/exercise3.jpg");}
+#nutrition {background-image: url("../Images/nutrition1.jpg");}
+#sleepHygiene {background-image: url("../Images/sleep1.jpg");}
+#yoga {background-image: url("../Images/yoga1.jpg");}
+#bodyMarkers {background-image: url("../Images/body1.jpg");}
+#understandingChallenges {background-image: url("../Images/mentalhealth1.jpg");}
+#compassionFatigueTraining {background-image: url("../Images/compassion1.jpg");}
+#resilienceTraining {background-image: url("../Images/peersupport1.jpg");}
+#peerSupport {background-image: url("../Images/peersupport3.jpg");}
+#inhouseChaplain {background-image: url("../Images/chaplain1.jpg");}
+#familyPrograms {background-image: url("../Images/residential1.jpg");}
+#apps {background-image: url("../Images/app1.jpg");}
+#equineProgram {background-image: url("../Images/horse1.jpg");}
+#serviceDogs {background-image: url("../Images/dog1.jpg");}
+#onsiteClinician {background-image: url("../Images/clinician1.jpg");}
+#mentalHealthServices {background-image: url("../Images/counsel2.jpg");}
+#residentialTreatmentPrograms {background-image: url("../Images/tea1.jpg");}
+#substanceAbusePrograms {background-image: url("../Images/substance1.jpg");}
+#eap {background-image: url("../Images/counsel3.jpg");}
+#hotlines {background-image: url("../Images/hotline1.jpg");}
+#veteransServices {background-image: url("../Images/vet1.jpg");}
 
 @media (max-width: 650px) {
     .areas {
@@ -133,10 +193,6 @@ header {
 
 .areabitlinks {
     color: var(--darkText);
-}
-
-.areabitlinks:hover {
-    text-decoration: underline;    
 }
 
 
